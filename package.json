@@ -1,0 +1,10 @@
+{
+  "name": "tailwind-caret-color",
+  "version": "1.0.0",
+  "description": "Tailwind plugin to create caret color classes",
+  "main": "index.js",
+  "repository": "https://github.com/Naoray/tailwind-caret-color",
+  "author": "Krishan Koenig",
+  "license": "MIT",
+  "private": false
+}
