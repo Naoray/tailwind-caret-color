@@ -1,7 +1,7 @@
 # Caret Color - TailwindCSS Plugin
 
-[![npm](https://img.shields.io/npm/v/tailwindcss-flexbox-order.svg?style=flat-square)](https://www.npmjs.com/package/tailwind-caret-color)
-[![npm](https://img.shields.io/npm/dt/tailwindcss-flexbox-order.svg?style=flat-square)](https://www.npmjs.com/package/tailwind-caret-color)
+[![npm](https://img.shields.io/npm/v/tailwind-caret-color.svg?style=flat-square)](https://www.npmjs.com/package/tailwind-caret-color)
+[![npm](https://img.shields.io/npm/dt/tailwind-caret-color.svg?style=flat-square)](https://www.npmjs.com/package/tailwind-caret-color)
 
 This plugin generates classes for coloring carets using `caret-color: #;`.
 
