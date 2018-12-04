@@ -1,6 +1,6 @@
 {
   "name": "tailwind-caret-color",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tailwind plugin to create caret color classes",
   "main": "index.js",
   "repository": "https://github.com/Naoray/tailwind-caret-color",
