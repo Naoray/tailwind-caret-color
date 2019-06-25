@@ -1,16 +1,33 @@
-const colors = require('tailwindcss/defaultConfig')().colors
 
-module.exports = function() {
-  return function ({e, addUtilities}) {
+module.exports = function () {
+  return function ({ e, addUtilities, theme }) {
+    colors = theme('colors');
+
     const caretColors = Object.keys(colors)
-      .map(key => {
-      return {
-        [`.caret-${e(key)}`]: {
-          'caret-color': colors[key]
+      .reduce((acc, key) => {
+        if (typeof colors[key] === 'string') {
+          return {
+            ...acc,
+            [`.caret-${e(key)}`]: {
+              'caret-color': colors[key]
+            },
+          };
         }
-      }
-    })
 
-    addUtilities(caretColors)
+        const variants = Object.keys(colors[key]);
+
+        return {
+          ...acc,
+          ...variants.reduce((a, variant) => ({
+            ...a,
+            [`.caret-${e(key)}-${variant}`]: {
+              'caret-color': colors[key][variant]
+            },
+          }, {})),
+        };
+
+      }, {});
+
+    addUtilities(caretColors);
   }
 }
