@@ -23,7 +23,7 @@ module.exports = function () {
             [`.caret-${e(key)}-${variant}`]: {
               'caret-color': colors[key][variant]
             },
-          }, {})),
+          }), {}),
         };
 
       }, {});
